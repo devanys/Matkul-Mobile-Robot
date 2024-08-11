@@ -5,7 +5,7 @@
 - [FDK](https://www.youtube.com/watch?v=JxuYc-El1h4)
 - [IDK](https://www.youtube.com/watch?v=a3tw8XC-2eg)
 
-## Fitur
+## Fungsionalitas
 
 - **DDMR**:
 - **FDK**: 
@@ -17,5 +17,8 @@
 
 ## Kontribusi
 
-Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti panduan berikut...
-
+- M Fat Hiy Ilman N
+- Astri Nur P
+- Siti Nurhalisa
+- Firman Aliyansyah S
+- Devan Yusfa S
