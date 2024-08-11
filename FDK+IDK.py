@@ -1,21 +1,17 @@
-
 import tkinter as tk
 from tkinter import messagebox
 import requests
 import cv2
 import threading
 
-ESP32_IP = "http://192.168.1.100"
+ESP32_IP = "http://"
 
-# Fungsi untuk mengirim data ke Arduino
 def send_to_arduino(target_count1, target_count2):
     ser.write(f"{target_count1},{target_count2}\n".encode())
 
-# Fungsi untuk mengirim perintah berhenti ke Arduino
 def stop_motors():
     ser.write("stop\n".encode())
 
-# Fungsi untuk memulai motor berdasarkan nilai input
 def start_motor():
     try:
         target_count1 = int(entry_motor1.get())
@@ -25,7 +21,6 @@ def start_motor():
     except ValueError:
         messagebox.showerror("Error", "Masukkan nilai yang valid")
 
-# Fungsi untuk memulai kamera
 def start_camera():
     cap = cv2.VideoCapture(0)
 
@@ -42,7 +37,6 @@ def start_camera():
     cap.release()
     cv2.destroyAllWindows()
 
-# Fungsi untuk membaca nilai hitungan encoder dari Arduino dan memperbarui GUI
 def read_encoder_values():
     while True:
         if ser.in_waiting > 0:
@@ -52,7 +46,6 @@ def read_encoder_values():
                 label_encoder1.config(text=f"Encoder Count Motor 1: {count1}")
                 label_encoder2.config(text=f"Encoder Count Motor 2: {count2}")
 
-# GUI setup
 root = tk.Tk()
 root.title("Motor Control GUI")
 
@@ -84,7 +77,6 @@ label_encoder1.grid(row=5, column=0, columnspan=2, pady=10)
 label_encoder2 = tk.Label(frame, text="Encoder Count Motor 2: 0")
 label_encoder2.grid(row=6, column=0, columnspan=2, pady=10)
 
-# Mulai thread untuk membaca nilai hitungan encoder dari Arduino
 threading.Thread(target=read_encoder_values, daemon=True).start()
 
 root.mainloop()
