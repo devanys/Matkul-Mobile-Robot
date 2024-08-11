@@ -8,9 +8,9 @@
 
 ## Fungsionalitas
 
-- **DDMR**:
-- **FDK**: 
-- **IDK**: 
+- **DDMR**
+- **FDK** 
+- **IDK** 
 
 ## Gui control encoder
 
