@@ -14,7 +14,8 @@
 
 ## Gui control encoder
 
-![image](https://github.com/user-attachments/assets/2487e882-ced9-4415-a9d3-b721eb520f9b)
+![Screenshot 2024-09-01 225642](https://github.com/user-attachments/assets/7140c7d8-0aae-4005-b285-185b534d9ce7)
+
 
 ## Kontribusi
 
